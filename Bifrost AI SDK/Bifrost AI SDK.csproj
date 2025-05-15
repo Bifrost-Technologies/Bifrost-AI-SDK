@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Bifrost_AI_SDK</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LLamaSharp" Version="0.19.0" />
+    <PackageReference Include="LLamaSharp.semantic-kernel" Version="0.19.0" />
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.49.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Abstractions" Version="1.49.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Lifespark.Genetics">
+      <HintPath>..\..\Lifespark.Genetics\bin\Debug\net8.0\Lifespark.Genetics.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

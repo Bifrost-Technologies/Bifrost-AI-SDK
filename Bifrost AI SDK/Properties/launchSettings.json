@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Bifrost AI SDK": {
+      "commandName": "Project",
+      "remoteDebugEnabled": false,
+      "nativeDebugging": true
+    }
+  }
+}
