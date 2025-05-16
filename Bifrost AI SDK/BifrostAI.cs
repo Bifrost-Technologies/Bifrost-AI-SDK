@@ -10,7 +10,6 @@ using LLamaSharp.SemanticKernel.ChatCompletion;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
-using System.ComponentModel;
 using AuthorRole = Microsoft.SemanticKernel.ChatCompletion.AuthorRole;
 using ChatHistory = Microsoft.SemanticKernel.ChatCompletion.ChatHistory;
 #pragma warning disable SKEXP0001 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
@@ -21,7 +20,7 @@ namespace Bifrost_AI_SDK
     {
         private string modelPath = Directory.GetCurrentDirectory() + @"\llama\models\Bitnet\bitnet2.gguf";
         private string llamalibrary = Directory.GetCurrentDirectory() + @"\llama\llama.dll";
-        // private string llamalibrary = @"C:\Users\proje\source\repos\Bifrost AI Test\Bifrost AI Test\bin\Debug\net8.0\llama\llama.dll";
+
         private Identity? Identity { get; set; }
         private CognitiveProcess? CognitiveProcess { get; set; }
         private Capabilities? Capabilities { get; set; }
@@ -35,7 +34,6 @@ namespace Bifrost_AI_SDK
             ModelConfig = new ModelParams(modelPath)
             {
                 ContextSize = 4056, // The longest length of chat as memory
-
             };
             InferenceConfig = new InferenceParams()
             {
